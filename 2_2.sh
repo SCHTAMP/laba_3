@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./previous_script.sh &> /dev/null &
+./2_1.sh &> /dev/null &
 less /tmp/run.log
