@@ -9,7 +9,7 @@ function print_regular_files() {
 }
 
 function print_symbolic_links() {
-    find . -type l -print0 | xargs -0 ls -l --time-style=long-iso
+    find -L . -xtype l -print0 | xargs -0 ls -l --time-style=long-iso
 }
 
 function print_character_devices() {
